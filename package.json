@@ -5,7 +5,8 @@
   "main": "./bin/run.js",
   "scripts": {
     "start": "node ./bin/run.js",
-    "test": "./node_modules/mocha/bin/mocha"
+    "test": "./node_modules/mocha/bin/mocha",
+    "pretest": "./node_modules/eslint/bin/eslint.js --ignore-path .gitignore ."
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,11 @@
   },
   "homepage": "https://github.com/maxyurk/yad2notify#readme",
   "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.7.0",
     "mocha": "^5.0.5"
   }
 }
