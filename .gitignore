@@ -72,3 +72,7 @@ fabric.properties
 # All the secrets
 secret*
 secrets/
+
+# "db"
+db.json
+
