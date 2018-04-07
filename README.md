@@ -1,16 +1,24 @@
 # Yad2Notify
 
-Get notifications on new yad2 advertisements.
+Get pushbullet notifications on new yad2 advertisements.
+
 
 ## Getting Started
 
-1. `git clone` & `cd <dir>`
-2. `npm i`
-3. `npm start`
+### instructions
 
-### Prerequisites
+1. [download & install node 8+ & npm](https://nodejs.org/en/download/)
+2. create a [pushbullet](pushbullet.com) account
+3. install pushbullet app on your [android](https://play.google.com/store/apps/details?id=com.pushbullet.android) or [iOS](https://itunes.apple.com/us/app/pushbullet/id810352052) device & login
+4. `git clone https://github.com/maxyurk/yad2notify.git`
+5. `cd yad2notify`
+6. `npm install --only=production`
+7. go to [pushbullet settings](https://www.pushbullet.com/#settings), click on `Create Access Token` and copy the token
+8. edit `config.js` -> paste token to `pushbulletAccessTokens` value
+9. search yad2 for whatever you need and copy the link of the page
+10. edit `config.js` -> paste link to `url` value 
+11. `npm start`
 
-node & npm
 
 ## Running the tests
 
